@@ -1,7 +1,10 @@
   body {
-  
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     font-family: Arial, sans-serif;
+    background-image: url(poly.svg) no-repeat;
+    color: white;
+   
+    
+
   }
   
   
@@ -51,16 +54,14 @@
 
     
 
-  body {
-    background-image: url(poly.svg) no-repeat;
-    color: white;
-  }
 
   ul.menuCS{
     margin-top: 0px;
     margin-bottom: 0px;
     position: sticky;
     top: 3px;
+    display: block;
+    
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -123,6 +124,7 @@
     font-weight: bold;
     text-align: center;
     margin: 15px 15px 15px 15px;
+    
   }
   
   .caraRes{
@@ -137,6 +139,7 @@
     margin-top: 1rem;
     position: sticky;
     top: 0px;
+    
   }
 
 
@@ -149,13 +152,7 @@
     border-top: 1px solid #fff;
   }
   
-  .text {
-    max-width: 1000px;
-    margin: auto;
-    padding: 1rem;
-    line-height: 1.6;
-  }
-  
+
   
   img {
     display: block;
@@ -333,10 +330,6 @@ li{
 
 .caraRes
 
-.text{
-  width: auto; 
-  text-align: justify;
-}
 
 .mapa{
   width: 90%; 
@@ -362,10 +355,25 @@ input[type="text"]{
 
 .calorieTab{
   width: 50%;
+  
 }
+
+.text{
+  width: auto; 
+  text-align: justify;
+}
+
 
 }
 
+.text {
+  max-width: 1000px;
+  margin: auto;
+   padding: 1rem;
+   line-height: 1.6;
+   text-align: justify;
+ }
+ 
 
 .body{background-image: url(poly.svg) ;
  background-repeat: no-repeat; 
