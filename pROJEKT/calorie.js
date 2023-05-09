@@ -11,11 +11,21 @@ function myFunction() {
   }
 
   if (document.getElementsByName("cil")[0].value == "zhub") {
-    calories *= 0.87;
+    calories = calories * 0.87;
   } else if (document.getElementsByName("cil")[0].value == "zust") {
     calories = calories;
   } else {
-    calories *= 1.15;
+    calories = calories * 1.15;
+  }
+
+  if (document.getElementsByName("aktiv")[0].value == "mAktiv") {
+    calories = calories * 0.87;
+  } else if (document.getElementsByName("aktiv")[0].value == "sAktiv") {
+    calories = calories * 1.13;
+  } else if (document.getElementsByName("aktiv")[0].value == "hAktiv") {
+    calories = calories * 1.25;
+  } else {
+    calories = calories;
   }
 
   calories = Math.trunc(calories);
