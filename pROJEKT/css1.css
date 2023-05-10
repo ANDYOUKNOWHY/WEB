@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   background-image: url(poly.svg) no-repeat;
   color: white;
+  -webkit-font-smoothing: antialiased;
 }
 
 *::-webkit-scrollbar {
@@ -61,7 +62,7 @@ h4,
 h5,
 h6 {
   color: #fff;
-  margin-top: -30px;
+  margin-top: -45px;
 }
 
 a {
@@ -242,6 +243,7 @@ button:hover {
 
 .arrowDiv {
   margin-left: 25px;
+  margin-top: 50px;
 }
 
 .calorieTab {
@@ -299,10 +301,6 @@ option {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
-}
-
-.arrowDiv {
-  margin-top: 35px;
 }
 
 .left {
