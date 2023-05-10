@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Teko", sans-serif;
+}
+
+body {
+  /*vh = výška viewportu (prohlížeče)*/
+  min-height: 100vh;
+}
+
+.cela_stranka {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+}
+
+.cela_stranka.active {
+  top: -100%;
+}
+
+.cela_stranka .pozadi {
+  position: relative;
+  width: 752px;
+  margin-left: 0px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cela_stranka .pozadi img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cela_stranka .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.cela_stranka .nav ul {
+  position: relative;
+}
+
+.cela_stranka .nav ul li {
+  position: relative;
+  list-style: none;
+  padding: 0 20px;
+  margin: 5px 0;
+  overflow: hidden;
+  display: table;
+}
+
+.cela_stranka .nav ul li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff6f00;
+  transition: transform 0.5s ease-in-out;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.cela_stranka .nav ul li:hover:before {
+  transition: transform 0.5s ease-in-out;
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+.cela_stranka .nav ul li a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  /*em relativní výška fontu*/
+  font-size: 4em;
+  margin-top: 10px;
+  font-weight: 700;
+  line-height: 1.2em;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.cela_stranka .nav ul li a::before {
+  /*obsah se bere z html z části "data text" ||
+  důvod = aby jsme nemuseli ke každému dělat 
+  vlastní classu a kopírivat styly a pouze měnit content*/
+  content: attr(data-text);
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  color: #fff;
+}
+
+.cela_stranka .nav ul li:hover a {
+  transform: translateY(-100%);
+  color: fff;
+}
+
+@media (max-width: 991px) {
+  .pozadi {
+    display: none;
+  }
+}
