@@ -9,7 +9,7 @@ body {
 }
 
 .galerie {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   padding: 0 20px;
@@ -36,7 +36,10 @@ body {
 .dropdown:hover .dropdownC {
   display: block;
   max-width: 300px;
-  min-width: 100%;
+  margin-top: -5px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  border: 7px solid #333;
+  border-radius: 10px;
 }
 
 .dText {
