@@ -1,0 +1,55 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.vrsek {
+  display: grid;
+  grid-column: 1/6;
+  grid-row: 1;
+  background-color: #1f86ff;
+  margin-top: -0.5%;
+  margin-left: -0.5%;
+  margin-right: -0.5%;
+  padding: 10px 10px 10px 30px;
+}
+
+.logo {
+  height: auto;
+  width: 10%;
+}
+
+.nazevSp {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35px;
+  letter-spacing: -0.8px;
+  word-spacing: 2.4px;
+  color: #000000;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  margin-left: 15%;
+  margin-top: -6.5%;
+  width: 20%px;
+  height: 100px;
+}
+
+.cast1 {
+  display: grid;
+  grid-column: 1/6;
+  grid-row: 2/4;
+  margin-left: -0.5%;
+  margin-right: -0.5%;
+
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+.bg {
+  object-fit: cover;
+  width: 100%;
+}
