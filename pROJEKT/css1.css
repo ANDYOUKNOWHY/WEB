@@ -102,6 +102,10 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 li a.active {
@@ -162,6 +166,10 @@ img {
   border: 2px solid #fff;
   margin: 0.5rem;
   border-radius: 0.5rem;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 .PN a:hover {
@@ -178,6 +186,10 @@ img {
   margin-left: 12.5%;
   margin-top: 20px;
   margin-bottom: 30px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .SPHref:hover {
@@ -335,6 +347,10 @@ option {
   cursor: pointer;
   padding: 15px;
   border-radius: 8px;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 #myBtn:hover {
