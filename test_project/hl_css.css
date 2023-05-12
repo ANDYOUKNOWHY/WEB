@@ -7,7 +7,7 @@
 body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(30, 10rem); /*repeat(12, 1fr);*/
+  grid-template-rows: repeat(40, 10rem);
 }
 
 .logo {
@@ -261,20 +261,23 @@ body {
 
 .btnListen:hover {
   background: solid #fff !important;
-  box-shadow: 0px 2px 20px 10px #ffffff;
+  box-shadow: 0px 1px 20px 2px #ffffff;
   color: #fff;
+  transform: scale(1.2);
 }
 
 .btnSp1:hover {
   background: solid #fff !important;
-  box-shadow: 0px 2px 20px 10px #ffffff;
+  box-shadow: 0px 1px 20px 2px #ffffff;
   color: #fff;
+  transform: scale(1.2);
 }
 
 .btn:hover {
   background: transparent !important;
-  box-shadow: 0px 2px 20px 10px #fff;
+  box-shadow: 0px 1px 20px 2px #fff;
   color: #fff;
+  transform: scale(1.2);
 }
 
 .head1 {
@@ -479,6 +482,23 @@ body {
   border-radius: 30px;
   margin-top: 130px;
   margin-left: 30px;
+  transition-duration: 0.3s;
+}
+
+.road:hover {
+  transform: scale(1.1) translatex(30px);
+}
+
+.kolo2 {
+  grid-column: 4;
+  grid-row: 11;
+  width: 270px;
+  height: 270px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 205, 234),
+    rgb(255, 255, 255)
+  );
 }
 
 .odjeti {
@@ -551,8 +571,9 @@ body {
 
 .aboutBtn:hover {
   background: black;
-  box-shadow: 0px 1px 10px 5px #000000;
+  box-shadow: 0px 1px 20px 2px #000000;
   color: #fff;
+  transform: scale(1.2);
 }
 
 .listky {
@@ -561,6 +582,11 @@ body {
   margin-left: 300px;
   grid-row: 16/22;
   border-radius: 50px;
+  transition-duration: 0.2s;
+}
+
+.listky:hover {
+  transform: scale(1.05) translate(5%, 2%);
 }
 
 .budouciConcerty {
@@ -602,6 +628,15 @@ body {
   z-index: 6;
   margin-left: 160px;
   font-size: 26px;
+}
+
+.kolo {
+  width: 200px;
+  height: 200px;
+  background-color: #f9e7e6;
+  border-radius: 100px;
+  grid-row: 17;
+  grid-column: 1;
 }
 
 .concert1Misto {
@@ -833,31 +868,219 @@ body {
 
 .concert1Btn:hover {
   background: black;
-  box-shadow: 0px 1px 10px 5px #000000;
+  box-shadow: 0px 1px 20px 2px #000000;
   color: #fff;
+  transform: scale(1.2);
 }
 
 .concert2Btn:hover {
   background: black;
-  box-shadow: 0px 1px 10px 5px #000000;
+  box-shadow: 0px 1px 20px 2px #000000;
   color: #fff;
+  transform: scale(1.2);
 }
 
 .concert3Btn:hover {
   background: black;
-  box-shadow: 0px 1px 10px 5px #000000;
+  box-shadow: 0px 1px 20px 2px #000000;
   color: #fff;
+  transform: scale(1.2);
 }
 
 .concert4Btn:hover {
   background: black;
-  box-shadow: 0px 1px 10px 5px #000000;
+  box-shadow: 0px 1px 20px 2px #000000;
   color: #fff;
+  transform: scale(1.2);
 }
 
 .pozadi20 {
   background-color: #f9e7e6;
-  grid-row: 23/30;
+  grid-row: 23/29;
   grid-column: 1/6;
   z-index: -2;
+}
+
+.alba {
+  grid-row: 24;
+  color: #000;
+  grid-column: 2/5;
+  z-index: 2;
+  font-size: 70px;
+  margin-left: 220px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.albaPopis {
+  text-align: center;
+  grid-row: 25;
+  color: #000;
+  grid-column: 1/6;
+  z-index: 2;
+  font-size: 18px;
+  margin-left: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -60px;
+}
+
+.album1 {
+  border-radius: 30px;
+  margin-top: -100px;
+  width: 15%;
+  grid-row: 26;
+  grid-column: 1/6;
+  margin-left: 12%;
+  transition-duration: 0.3s;
+}
+
+.album2 {
+  border-radius: 30px;
+  margin-top: -100px;
+  width: 15%;
+  grid-row: 26;
+  grid-column: 1/6;
+  margin-left: 31.7%;
+  transition-duration: 0.3s;
+}
+
+.album3 {
+  border-radius: 30px;
+  margin-top: -100px;
+  width: 15%;
+  grid-row: 26;
+  grid-column: 1/6;
+  margin-left: 51.3%;
+  transition-duration: 0.3s;
+}
+
+.album4 {
+  border-radius: 30px;
+  margin-top: -100px;
+  width: 15%;
+  grid-row: 26;
+  grid-column: 1/6;
+  transition-duration: 0.3s;
+  margin-left: 70%;
+}
+
+.album1:hover {
+  transform: scale(1.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.album2:hover {
+  transform: scale(1.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.album3:hover {
+  transform: scale(1.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.album4:hover {
+  transform: scale(1.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.intro {
+  background: #f9e7e6;
+  color: #7cfc00;
+  padding: 3em 0;
+  grid-row: 29/34;
+  grid-column: 1/6;
+}
+
+.container {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.2em;
+}
+
+.col {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0.2em;
+}
+
+.col img {
+  gap: 15px;
+  margin-top: 0.4em;
+  vertical-align: middle;
+}
+
+.gallerynadpis {
+  grid-row: 28;
+  color: #000;
+  grid-column: 2/5;
+  z-index: 2;
+  font-size: 70px;
+  margin-left: 34%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.galleryPopis {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  grid-row: 28;
+  grid-column: 1/6;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  z-index: 6;
+  margin-left: 0px;
+  margin-top: 100px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.col img {
+  transition-duration: 0.3s;
+}
+
+.col img:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  transform: scale(1.8);
+  width: 150%;
+  height: auto;
+  z-index: 8;
+}
+
+.kolo3 {
+  width: 200px;
+  height: 200px;
+  background-color: #fff7f7;
+  border-radius: 100px;
+  grid-row: 24;
+  grid-column: 1;
+  z-index: 9;
+}
+
+.kolo4 {
+  width: 150px;
+  height: 150px;
+  background-color: #ffd3d0;
+  box-shadow: 10px 10px 20px 10px #ffffff;
+  border-radius: 75px;
+  grid-row: 26;
+  grid-column: 5;
+  z-index: 9;
+}
+
+.kolo5 {
+  width: 250px;
+  height: 250px;
+  background-color: #fff7f6;
+  border-radius: 125px;
+  grid-row: 32;
+  grid-column: 1;
+  margin-left: 100px;
+  z-index: 9;
 }
