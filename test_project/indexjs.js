@@ -1,7 +1,19 @@
-function zapsat() {
-  var email = document.getElementById("email").value;
+function download(filename, text) {
+  var pom = document.createElement("a");
+  pom.setAttribute(
+    "href",
+    "data:text/plain;charset=utf-8," + encodeURIComponent(text)
+  );
+  pom.setAttribute("download", filename);
 
-  localStorage.setItem("email", email);
+  pom.style.display = "none";
+  document.body.appendChild(pom);
 
-  console.log("Úspěšně zapsáno do localStorage.");
+  pom.click();
+
+  document.body.removeChild(pom);
+}
+
+function addTextTXT() {
+  document.addtext.name.value = document.addtext.name.value + ".txt";
 }

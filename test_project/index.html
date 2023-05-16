@@ -156,11 +156,24 @@
     <div class="kolo7"></div>
     <div class="kolo8"></div>
     <p class="emailN">Subscribe & follow</p>
-    <input class="emailInput" placeholder="Email:" id="email" type="text" />
+    <!--<input class="emailInput" placeholder="Email:" id="email" type="text" />
     <button class="confirmBtn" type="submit" onclick="zapsat()">
       Subscribe
-    </button>
+    </button>-->
 
+    <form class="form-mail"
+      name="addtext"
+      onsubmit="download(this['name'].value, this['text'].value)"
+    >
+      <input
+        class="emailInput"
+        name="text"
+        placeholder="Email address:"
+      ></input>
+      <br />
+      <input type="text" name="name" value="emails" placeholder="File Name" class="podTim" />
+      <input type="submit" onClick="addTexttxt();" value="Submit" class="submitBtn"/>
+    </form>
     <script src="indexjs.js"></script>
   </body>
 </html>
